@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CekerAyamActivity">
+
+    <ImageView
+        android:id="@+id/cekerayam"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/cekerayam"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_cekerayam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ceker Ayam"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cekerayam"/>
+
+    <TextView
+        android:id="@+id/desc_cekerayam"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Ceker Ayam adalah makanan yang sering ditemukan
+di setiap angkringan. Menu ini menggunakan ceker ayam sebagai bahannya
+dengan bumbu mercon atau campuran kecap. Menu ini menjadi pendamping saat
+makan nasi kucing."
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/title_cekerayam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

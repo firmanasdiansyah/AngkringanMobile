@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.udinus.a4510_a11201911862_firmanasdiansyah_utsppb">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_black"
+        android:label="Angkringan Mobile"
+        android:roundIcon="@drawable/icon_white"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAg4H5EAaUOLmDqPqg8ARk06WFg_hWTxWI" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".PembelianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TehPanasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KopiJossActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SusuJaheActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WedankJaheActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GorenganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TempeBacemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TahuBacemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SayapAyamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CekerAyamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SateTelurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SateUsusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SateKepalaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NasiKucingActivity"
+            android:exported="false" />
+        <activity android:name=".RegisterResultActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".TentangKamiActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
